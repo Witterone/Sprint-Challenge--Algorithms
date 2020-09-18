@@ -8,7 +8,7 @@ a) This will loop n times so it should have a run time of O(n)
 b) This has no interaction with the i so it appears to be O(n^2) n squared
 
 
-c) This appears to have a constant run time using recursion O(c)
+c) This appears to have a constant run time using recursion O(N)
 
 ## Exercise II
 
