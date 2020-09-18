@@ -7,7 +7,7 @@ class Test(unittest.TestCase):
     def setUp(self):
         self.word = ""
 
-    def test_count_th_empty(self):
+    def test_count_th_empty(self):  
         self.word = ""
         count = count_th(self.word)
         self.assertEqual(0, count)

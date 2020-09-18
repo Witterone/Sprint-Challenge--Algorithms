@@ -5,6 +5,24 @@ Your function must utilize recursion. It cannot contain any loops.
 '''
 def count_th(word):
     
-    # TBC
-    
-    pass
+   l = list(word)
+   new_word = None
+   counter = 0
+   
+   if len(l)>=2:
+       
+       if l[0] == 't' and l[1] == 'h':
+           counter +=1
+       else:
+           counter = counter
+       jnr = ""
+       
+       new_word = jnr.join(l[1:])
+       print(new_word, counter)
+       
+       count_th(new_word)
+       
+   return counter
+
+
+print(count_th('math'))

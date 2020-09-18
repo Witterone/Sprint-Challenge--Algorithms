@@ -96,8 +96,33 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-        # Fill this out
-        pass
+        start = 0
+        end = len(self._list)-1
+        
+        while start<end:
+            self._position = start
+            for i in range(start,end):
+                if self._list[i] == min(self._list[start:end]):
+                    self._item = self._list[i]
+        
+            if self.compare_item() < 0 :
+                self.swap_item()
+        
+            self._position = end
+        
+            for i in range(start,end):
+                if self._list[i] == max(self._list[start:end]):
+                    self._item = self._list[i]
+        
+            if self.compare_item() > 0 :
+                self.swap_item()
+            
+            start +=1
+            end += -1
+                
+            
+        return self._list    
+        
 
 
 if __name__ == "__main__":
